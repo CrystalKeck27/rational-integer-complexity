@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rational-integer-complexity'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rational-integer-complexity",
+                    "--package=rational-integer-complexity"
+                ],
+                "filter": {
+                    "name": "rational-integer-complexity",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rational-integer-complexity'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rational-integer-complexity",
+                    "--package=rational-integer-complexity"
+                ],
+                "filter": {
+                    "name": "rational-integer-complexity",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
